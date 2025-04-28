@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>L4XY Login</title>
+  <style>
+    body { background-color: #111; color: #fff; font-family: Arial, sans-serif; text-align: center; margin-top: 100px; }
+    input { padding: 10px; margin: 10px; width: 200px; }
+    button { padding: 10px 20px; background: #00ff00; color: #000; border: none; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>L4XY Panel Girişi</h1>
+  <input type="password" id="password" placeholder="Şifreyi Gir">
+  <br>
+  <button onclick="login()">Giriş Yap</button>
+
+  <script>
+    function login() {
+      var pass = document.getElementById('password').value;
+      if (pass === 'l4xy') {
+        window.location.href = 'panel.html';
+      } else {
+        alert('Yanlış şifre amk.');
+      }
+    }
+  </script>
+</body>
+</html>
